@@ -1,0 +1,21 @@
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Lateef:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;700;800;900&family=Shippori+Mincho:wght@400;500;700&display=swap');
+ 
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Lateef:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;700;800;900&family=Shippori+Mincho:wght@400;500;700&display=swap');
+ 
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+ 
+  font-family: 'Open Sans';
+
+  font-family: 'IBM Plex Sans Arabic';
+ 
+ 
+ 
+ 
+}
+
+

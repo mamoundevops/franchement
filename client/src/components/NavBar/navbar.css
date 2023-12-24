@@ -1,0 +1,122 @@
+
+
+
+
+
+
+
+
+/* Nav Bar  */
+nav {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+ul {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.logoname {
+  font-weight: bold;
+  list-style: none; /* Remove the default list-style */
+}
+
+
+.logoname a {
+  text-decoration: none; /* Remove underline from the link */
+  color: inherit; /* Use the default text color */
+  transition: transform 0.3s ease; /* Apply smooth scaling transition */
+}
+
+.logoname a:hover {
+  transform: scale(1.1); /* Scale the text on hover */
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+}
+h5 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.rightmenu {
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+}
+.btnlogin {
+  background-color: transparent;
+  padding: 0.3rem 3.4rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+}
+select {
+  width: auto;
+  padding: 0rem 1rem;
+  border: none;
+  background-color: transparent;
+  gap: 1rem;
+}
+option {
+  border: none;
+}
+
+/* Animation  */
+/* nav animation  */
+
+.navanimation {
+    opacity: 0;
+    animation: slideUpTitlenav 1.5s forwards, fadeInTitlenav 1.5s forwards;
+  }
+  
+  @keyframes slideUpTitlenav {
+    0% {
+      transform: translateY(-50px); /* Move up by 20 pixels */
+    }
+    100% {
+      transform: translateY(0); /* Back to its original position */
+    }
+  }
+  
+  @keyframes fadeInTitlenav {
+    from {
+      opacity: 0; /* Start with opacity 0 */
+    }
+    to {
+      opacity: 1; /* Fade in the title */
+    }
+  }
+
+
+  /* Responsive desing  */
+
+@media only screen and (max-width: 600px) {
+ .logoname{
+  font-size: 1rem;
+ }
+ .btnlogin{
+  padding: 0.3rem 1rem;
+   margin: 1rem;
+ }
+
+ select {
+  padding: 0rem 0.5rem;
+  gap: 0.5rem;
+}
+ 
+ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+   justify-content: center;
+}
+  
+}

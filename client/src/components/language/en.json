@@ -1,0 +1,44 @@
+{
+  "landingpage": {
+    "appname":"FRANCHEMENT",
+    "login":"login", 
+    "bigtitle":"What Do They Think About You ?",
+    "smaltitle":"Are you ready to know people's feedback about you without knowing them ?",
+    "joinus":"Join Us",
+    "getintouch":"get in touch",
+    "gethelp":"get help",
+    "termsandprivacy":"terms and privacy",
+    "howtotitle":"3 Easy Steps",
+    "howtosmaltitle":"This website is very simple. Once logged in with your Google or Facebook account directly, you can share your profile link on any social media platform and ask people to use the link to provide their feedback about you. Anyone can write anything anonymously, and it will be delivered to you through the website instantly.",
+    "howtocard" :{
+      "firsttitle":"Create An Account",
+      "thirdtext":"When you log into your account, you'll find all the feedback your friends have written about you. Only you can read them." ,
+       "secondtitle":"Share Your Link",
+       "secondtext":"Once you have your link, you can share it on social media to receive feedback anonymously.",
+       "thirdtitle":"Read Feedback",
+       "firsttext":"You can easily create an account using your Google or Facebook accounts"
+      }
+    ,
+    "testimonialtitle":"Boom !!",
+    "testimonialcard": {
+      "firstcardtitle":"Annonymous", 
+      "firstdate":"05/03/2023",
+       "firsthour":"22:45min", 
+       "firsttext":"Your vibrant spirit illuminates every room you grace. Your kindness and wit weave magic into moments. A true gem among friends, your presence shines endlessly.",
+      "secondcardtitle":"Annonymous",
+       "seconddate":"10/02/2023",
+        "secondhour":" 10:12min", 
+        "secondtext":"Your style is a delightful blend of charm and humor! Your fashion choices always bring a smile. You truly own the art of dressing with panache!",
+      "thirdcardtitle":"Annonymous",
+       "thirddate":"05/12/2023",
+        "thirdhour":"17:15min", 
+        "thirdtext":"  Your smile lights up every room, and your ability to make everyone laugh is pure magic. Your presence brings joy to life. Keep spreading that contagious positivity!"
+    },
+    "contatus":{
+      "contactustitle":"Contact Us",
+      "contactusSubtitle":"feel free to contact us any time 7/7 and 24/H",
+      "contactusemail":"franchemant@gmail.com"
+    },
+    "footer":"All rights reserved for FRANCHEMENT@2023"
+  }
+}

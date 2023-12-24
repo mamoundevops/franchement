@@ -1,0 +1,597 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.oneline {
+  white-space: nowrap;
+}
+
+:root {
+  /* --primary-color: #002e5f; */
+  --primary-color: #03945d;
+  --third-color: #e6ac0c;
+  /* --text-color: #333333; */
+  --text-color: #fff;
+  --secondtext-color: #002e5f;
+  --border-color: lightgray;
+}
+.hidethis {
+  display: none;
+}
+
+.landingcontainer {
+  /* width: 100vw; */
+  max-width: 100vw;
+  background-color: white;
+}
+
+/* Nav Bar  */
+nav {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+ul {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.logoname {
+  font-weight: bold;
+  list-style: none; /* Remove the default list-style */
+}
+
+.logoname a {
+  text-decoration: none; /* Remove underline from the link */
+  color: inherit; /* Use the default text color */
+  transition: transform 0.3s ease; /* Apply smooth scaling transition */
+}
+
+.logoname a:hover {
+  transform: scale(1.1); /* Scale the text on hover */
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+}
+h5 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.rightmenu {
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+}
+.btnlogin {
+  background-color: transparent;
+  padding: 0.3rem 3.4rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+}
+select {
+  width: auto;
+  padding: 0rem 1rem;
+  border: none;
+  background-color: transparent;
+  gap: 1rem;
+}
+option {
+  border: none;
+}
+
+/* First page  */
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.hero-firstdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-title {
+  padding: 1rem;
+  margin-top: 6rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--secondtext-color);
+}
+.hero-span {
+  padding: 0.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-lastdiv {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 1rem 0.4rem;
+  position: absolute;
+  bottom: 0;
+}
+.hero-lastdiv-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+/* How to  */
+
+.howto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  max-width: 100%;
+  height: 100vh;
+}
+.howto-firstdiv {
+  display: flex;
+  position: relative;
+  width: 70%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+.howto-title {
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--secondtext-color);
+}
+
+.howto-title-span {
+  font-weight: normal;
+  padding: 1rem;
+  text-align: center;
+}
+
+.howto-card-img {
+  position: relative;
+  width: 50%;
+}
+
+.howto-lastdiv {
+  margin-top: 0;
+  display: flex;
+  position: relative;
+  max-width: 90%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  /* border: 1px solid var(--border-color); */
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 0.7rem;
+}
+.howto-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+}
+.howto-card-title {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: var(--third-color);
+  text-align: center;
+}
+
+/* Testemonial  */
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  max-width: 100%;
+  /* max-height: 100vh; */
+}
+.testimonial-title-div {
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-title {
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--secondtext-color);
+}
+.testimonial-cards {
+  margin: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* width: 100%; */
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-card {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--third-color);
+  width: 37%;
+  /* transform: skewY(8deg); */
+}
+.testimonial-card-img {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding: 1rem;
+  font-size: 2.5rem;
+  width: 25%;
+}
+.testimonial-card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.testimonial-card-content-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.testimonial-card-content-header-namedate {
+  display: flex;
+  flex-direction: column;
+}
+.testimonial-card-content-header-name {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.testimonial-card-content-header-date {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.testimonial-card-content-header-date-date {
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+.testimonial-card-content-header-date-time {
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+.testimonial-card-content-header-delete {
+  /* padding: 1rem; */
+  font-size: 1.5rem;
+}
+.testimonial-card-content-message {
+  margin-top: 1rem;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+.testimonial-card2 {
+  background-color: var(--secondtext-color);
+  color: var(--third-color);
+  /* transform: skewY(-8deg); */
+}
+.testimonial-card3 {
+  background-color: #bbbfbe;
+  color: var(--secondtext-color);
+  /* transform: skewY(0deg); */
+  margin-top: 3rem;
+}
+
+/* Animation  */
+
+/* First page hero  */
+
+.text-pop-up-title {
+  opacity: 0;
+  animation: slideUpTitle 1.5s forwards, fadeInTitle 1s forwards;
+}
+
+.text-pop-up-span {
+  opacity: 0;
+  animation: slideUpTitle 2s forwards, fadeInTitle 1.5s forwards;
+}
+
+.text-pop-up-btn {
+  opacity: 0;
+  animation: slideUpTitle 3s forwards, fadeInTitle 2s forwards;
+}
+
+@keyframes slideUpTitle {
+  from {
+    transform: translateY(50px); /* Move up by 20 pixels */
+  }
+  to {
+    transform: translateY(0); /* Back to its original position */
+  }
+}
+
+@keyframes fadeInTitle {
+  from {
+    opacity: 0; /* Start with opacity 0 */
+  }
+  to {
+    opacity: 1; /* Fade in the title */
+  }
+}
+
+.animatlastdiv {
+  opacity: 0;
+  animation: sidelastdiv 1.5s forwards, fadeinlastdiv 1.5s forwards;
+}
+
+@keyframes sidelastdiv {
+  0% {
+    transform: translateY(50px); /* Move up by 20 pixels */
+  }
+  100% {
+    transform: translateY(0); /* Back to its original position */
+  }
+}
+
+@keyframes fadeinlastdiv {
+  from {
+    opacity: 0; /* Start with opacity 0 */
+  }
+  to {
+    opacity: 1; /* Fade in the title */
+  }
+}
+
+/* Animation of how to  */
+
+.animathowtotitle {
+  opacity: 0;
+  animation: sidehowtotitle 1.5s forwards, fadeinhowtotitle 1.5s forwards;
+}
+.animathowtospan {
+  opacity: 0;
+  animation: sidehowtotitle 1.5s forwards, fadeinhowtotitle 1.5s forwards;
+}
+
+.animatehowtocardimg {
+  opacity: 0;
+  animation: sidehowtotitle 2s forwards, fadeinhowtotitle 1.5s forwards;
+}
+.animatehowtocardtitle {
+  opacity: 0;
+  animation: sidehowtotitle 1s forwards, fadeinhowtotitle 1.5s forwards;
+}
+.animatehowtocardspan {
+  opacity: 0;
+  animation: sidehowtotitle 2.5s forwards, fadeinhowtotitle 1.5s forwards;
+}
+
+@keyframes sidehowtotitle {
+  0% {
+    transform: translateY(50px); /* Move up by 20 pixels */
+  }
+  100% {
+    transform: translateY(0); /* Back to its original position */
+  }
+}
+
+@keyframes fadeinhowtotitle {
+  from {
+    opacity: 0; /* Start with opacity 0 */
+  }
+  to {
+    opacity: 1; /* Fade in the title */
+  }
+}
+
+/* Animate Testimonial  */
+
+.animattestimonialtitle {
+  opacity: 0;
+  animation: sidetetimonialtitle 2.5s forwards, fadeinhowtotitle 1.5s forwards;
+}
+
+@keyframes sidetetimonialtitle {
+  0% {
+    transform: translateY(50px); /* Move up by 20 pixels */
+  }
+  100% {
+    transform: translateY(0); /* Back to its original position */
+  }
+}
+
+.animatecard1 {
+  opacity: 0;
+  animation: sidetestimonialcard1 2.5s forwards, fadeinhowtotitle 1.5s forwards;
+}
+.animatecard2 {
+  opacity: 0;
+  animation: sidetestimonialcard2 2.5s forwards, fadeinhowtotitle 1.5s forwards;
+}
+.animatecard3 {
+  opacity: 0;
+  animation: sidetestimonialcard3 2.5s forwards, fadeinhowtotitle 1.5s forwards;
+}
+
+@keyframes sidetestimonialcard1 {
+  0% {
+    transform: skewY(0deg);
+  }
+  100% {
+    transform: skewY(8deg);
+  }
+}
+@keyframes sidetestimonialcard2 {
+  0% {
+    transform: skewY(0deg);
+  }
+  100% {
+    transform: skewY(-8deg);
+  }
+}
+@keyframes sidetestimonialcard3 {
+  0% {
+    transform: skewY(0deg);
+  }
+  100% {
+    transform: skewY(0deg);
+  }
+}
+
+@keyframes fadeinhowtotitle {
+  from {
+    opacity: 0; /* Start with opacity 0 */
+  }
+  to {
+    opacity: 1; /* Fade in the title */
+  }
+}
+
+/* Modal  */
+
+body.active-modal {
+  overflow-y: hidden;
+}
+
+.btn-modal {
+  padding: 10px 20px;
+  display: block;
+  margin: 100px auto 0;
+  font-size: 18px;
+}
+
+.modal,
+.overlay {
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+.modal {
+  border-radius: 1rem;
+}
+
+.overlay {
+  background: rgba(49, 49, 49, 0.8);
+  /* background-color: rgb(0, 47, 97,0.8); */
+  /* background-color: rgb(228, 170, 12, 0.5) */
+}
+.modal-content {
+  z-index: 2;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #f1f1f1;
+  /* background: #03945d; */
+  padding: 14px 28px;
+  border-radius: 1rem;
+  max-width: 80%;
+  width: 80%;
+  min-width: 300px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 7px;
+  font-weight: bolder;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.modal-content h2 {
+  font-weight: normal;
+  font-size: 1.5rem;
+  color: var(--secondtext-color);
+}
+.modal-content p {
+  font-weight: normal;
+  font-size: 1rem;
+}
+details {
+  padding: 0.8rem;
+}
+.summarytitle {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.summarycontent {
+  font-size: 0.9rem;
+  margin-top: 0.6rem;
+  /* padding: 1rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive desing  */
+
+@media only screen and (max-width: 600px) {
+  .howto {
+    flex-direction: row;
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .howto-lastdiv {
+    flex-direction: column;
+  }
+
+  .testimonial-cards {
+    gap: 3rem;
+margin: 1rem;
+    flex-direction: column;
+  }
+  .testimonial-card {
+    display: flex;
+    width: 99%;
+  }
+  .testimonial-card3 {
+    margin-top: 0;
+  }
+  .howto-title{
+    margin-top: 2rem;
+  }
+  .testimonial-title{
+    margin-top: 2rem;
+  }
+}

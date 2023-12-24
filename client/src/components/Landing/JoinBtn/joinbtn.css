@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.joinus {
+    background-color: var(--primary-color);
+    padding: 0.4rem 4.4rem;
+    border: none;
+    border-radius: 0.3rem;
+    color: var(--text-color);
+  }
+
+
+
+.text-pop-up-btn {
+    opacity: 0;
+    animation: slideUpTitle 3s forwards, fadeInTitle 2s forwards;
+  }
+  
+  @keyframes slideUpTitle {
+    from {
+      transform: translateY(50px); /* Move up by 20 pixels */
+    }
+    to {
+      transform: translateY(0); /* Back to its original position */
+    }
+  }
+  
+  @keyframes fadeInTitle {
+    from {
+      opacity: 0; /* Start with opacity 0 */
+    }
+    to {
+      opacity: 1; /* Fade in the title */
+    }
+  }

@@ -1,0 +1,43 @@
+{
+  "landingpage": {
+    "appname": "FRANCHEMENT",
+    "login": "connexion",
+    "bigtitle": "Que pensent-ils de vous ?",
+    "smaltitle": "Êtes-vous prêt à connaître l'avis des gens sur vous sans les connaître ?",
+    "joinus": "Rejoignez-nous",
+    "getintouch": "Contactez-nous",
+    "gethelp": "Obtenir de l'aide",
+    "termsandprivacy": "Termes et Confidentialité",
+    "howtotitle": "Trois Etapes Faciles",
+    "howtosmaltitle": "Le site est très simple. Une fois connecté avec votre compte Google ou Facebook, vous pouvez partager votre lien de profil sur n'importe quelle plateforme de médias sociaux et demander aux gens d'utiliser le lien pour vous donner leurs commentaires. Quiconque peut écrire anonymement, et cela vous sera livré instantanément via le site.",
+    "howtocard": {
+      "firsttitle": "Créer un compte",
+      "thirdtext": "Lorsque vous vous connectez à votre compte, vous trouverez tous les avis que vos amis ont écrits à votre sujet. Seul vous pouvez les lire.",
+      "secondtitle": "Partagez votre lien",
+      "secondtext": "Une fois que vous avez votre lien, vous pouvez le partager sur les réseaux sociaux pour recevoir des avis anonymes.",
+      "thirdtitle": "Lire les avis",
+      "firsttext": "Vous pouvez facilement créer un compte en utilisant votre compte Google ou Facebook."
+    },
+    "testimonialtitle": "Boom !!",
+    "testimonialcard": {
+      "firstcardtitle": "Anonyme",
+      "firstdate": "05/03/2023",
+      "firsthour": "22:45 min",
+      "firsttext": "Votre esprit vibrant illumine chaque pièce où vous passez. Votre gentillesse et votre esprit ajoutent de la magie aux moments. Un véritable joyau parmi les amis, votre présence brille sans fin.",
+      "secondcardtitle": "Anonyme",
+      "seconddate": "10/02/2023",
+      "secondhour": "10:12 min",
+      "secondtext": "Votre style est un délicieux mélange de charme et d'humour ! Vos choix vestimentaires apportent toujours le sourire. Vous maîtrisez vraiment l'art de s'habiller avec panache !",
+      "thirdcardtitle": "Anonyme",
+      "thirddate": "05/12/2023",
+      "thirdhour": "17:15 min",
+      "thirdtext": "Votre sourire illumine chaque pièce, et votre capacité à faire rire tout le monde est pure magie. Votre présence apporte de la joie à la vie. Continuez à propager cette positivité contagieuse !"
+    },
+    "contatus": {
+      "contactustitle": "Nous Contacter",
+      "contactusSubtitle": "N'hésitez pas à nous contacter à tout moment, 7/7 et 24/H",
+      "contactusemail": "franchemant@gmail.com"
+    },
+    "footer": "Tous droits réservés pour FRANCHEMENT@2023"
+  }
+}

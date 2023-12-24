@@ -1,0 +1,52 @@
+import { useEffect, useState } from "react";
+
+import "./App.css";
+
+import { useTranslation } from "react-i18next";
+import { useLanguage } from "./components/language/LanguageContext";
+function App() {
+  const { t, i18n } = useTranslation();
+  // useEffect(() => {
+  //  const lng = navigator.language;
+  //  i18n.changeLanguage(lng);
+
+  // }, [])
+
+  const { language, updateLanguage } = useLanguage();
+
+  const handleChangeLanguage = (newLanguage) => {
+    updateLanguage(newLanguage);
+  };
+
+  return (
+    <>
+      <h2>{t("greeting.hello")}</h2>
+      <br />
+      <h>Browser language : </h>
+      <span>{language}</span>
+      <br />
+      <br />
+      <br />
+      <button style={{padding:'1rem 2rem', margin:'1rem 2rem'}}
+        onClick={()=> handleChangeLanguage('ar')}
+      >
+        Ar
+      </button>
+      <button style={{padding:'1rem 2rem', margin:'1rem 2rem'}}
+        onClick={()=> handleChangeLanguage('fr')}
+      >
+        Fr
+      </button>
+      <br />
+      <br />
+      <br />
+      <h>Application language</h>
+      <br />
+      <span>{i18n.language}</span>
+      <br/>
+      <span>{navigator.language}</span>
+    </>
+  );
+}
+
+export default App;

@@ -1,0 +1,17 @@
+.firsttemplatefirstdiv{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    border: 1px solid gray ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.firsttemplateseconddiv{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    background: yellow;
+    border: 1px solid gray ;
+    border-radius: 20px;
+}
