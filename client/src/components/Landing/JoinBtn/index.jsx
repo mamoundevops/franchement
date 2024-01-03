@@ -6,7 +6,7 @@ const JoinBtn = () => {
   return (
     <button className="joinus  text-pop-up-btn">
     
-    {t("landingpage.joinus")}
+    <span>{t('landingpage.joinus')}</span>
   </button>
   )
 }

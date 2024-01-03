@@ -4,15 +4,18 @@
     box-sizing: border-box;
 }
 
-.joinus {
-    background-color: var(--primary-color);
-    padding: 0.4rem 4.4rem;
-    border: none;
-    border-radius: 0.3rem;
-    color: var(--text-color);
-  }
+:root {
+  /* --primary-color: #002e5f; */
+  --primary-color: #03945d;
+  --third-color: #e6ac0c;
+  /* --text-color: #333333; */
+  --text-color: #fff;
+  --secondtext-color: #002e5f;
+  --border-color: lightgray;
+}
 
 
+  
 
 .text-pop-up-btn {
     opacity: 0;
@@ -36,3 +39,60 @@
       opacity: 1; /* Fade in the title */
     }
   }
+
+
+
+  /* css test  */
+
+
+
+  /* Base button styles */
+
+ 
+ 
+.joinus {
+  /* padding: 10px 20px; */
+  font-size: 16px;
+     background-color: var(--primary-color);
+    padding: 0.4rem 4.4rem;
+    
+    border-radius: 0.3rem;
+    color: var(--text-color);
+  border: none;
+   
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background-image: linear-gradient(45deg, var(--primary-color) 50%, var(--third-color) 50%);
+  background-size: 200%;
+}
+
+/* Text styles */
+.joinus span {
+  position: relative;
+  z-index: 2;
+}
+
+/* Diagonal split effect on hover */
+.joinus::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(45deg, var(--secondtext-color) 50%, var(--primary-color) 50%);
+  transition: width 0.3s ease;
+  z-index: 1;
+}
+
+.joinus:hover::before {
+  width: 100%;
+}
+
+/* Scale up effect on hover */
+.joinus:hover {
+  transform: scale(1.1);
+  background-position: -100%;
+}
